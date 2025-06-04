@@ -11,7 +11,7 @@ steps:
 - task: Docker@2
   displayName: 'Build and Push image to ACR'
   inputs:
-    containerRegistry: 'acr-xoan-conn'  # ← Pon aquí el nombre real de tu service connection
+    containerRegistry: 'acrxoanflask-conn'  # ← Pon aquí el nombre real de tu service connection
     repository: '$(imageName)'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
